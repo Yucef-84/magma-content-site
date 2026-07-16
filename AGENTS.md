@@ -22,7 +22,7 @@ MAGMA(3040 남성 패션 브랜드)의 회사소개 사이트 스타터입니다
 | --- | --- | --- |
 | 블로그 발행 | 새 글을 `content/posts`에 만들고 노출 | `content/posts/*.md`, `POST /api/posts` |
 | 실적 리포트 발행 | 데이터 자료를 `content/reports`에 만들고 노출 | `content/reports/*.md`, `collection: "reports"` |
-| 히어로 영상 | 홈 첫 화면 배경 영상을 삽입 | `src/components/HeroMedia.tsx`, `public/hero.mp4` |
+| 히어로 영상 | 홈 첫 화면 배경 영상을 삽입 | `public/hero.mp4` + `site.config.ts` 의 `hero.video` (컴포넌트 수정 불필요) |
 | 대시보드 임베드 | 리포트에 BI 대시보드를 연결 | `dashboardUrl` frontmatter, `DashboardEmbed` |
 | CTA/SNS | 외부 행동 유도 링크 활성화 | `site.config.ts`, `CtaSlot` |
 
@@ -35,7 +35,7 @@ MAGMA(3040 남성 패션 브랜드)의 회사소개 사이트 스타터입니다
 | 블로그 글 | `content/posts/*.md` 또는 발행 API |
 | 실적 리포트 | `content/reports/*.md` 또는 발행 API `collection:"reports"` |
 | 대시보드 iframe | 마크다운 raw HTML이 아니라 `dashboardUrl` 필드 |
-| 히어로 배경 영상 | `src/components/HeroMedia.tsx` |
+| 히어로 배경 영상 | `site.config.ts` 의 `hero.video` (+ `public/hero.mp4`). 렌더 로직은 `HeroMedia.tsx` 가 자동 처리 |
 | 룩북 이미지 자리 | `src/components/ImageSlot.tsx`를 쓰는 곳 |
 
 ## 지켜야 할 계약

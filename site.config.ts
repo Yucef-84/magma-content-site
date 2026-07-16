@@ -7,6 +7,8 @@ export interface SiteConfig {
   company: { name: string; tagline: string; description: string };
   links: Record<string, string>;
   cta: { enabled: boolean; label: string; href: string };
+  /** 홈 히어로 배경. video 가 있으면 영상, 없으면(null) poster 이미지로 렌더됩니다. */
+  hero: { video: string | null; poster: string };
 }
 
 export const siteConfig: SiteConfig = {
@@ -24,5 +26,13 @@ export const siteConfig: SiteConfig = {
     enabled: false,
     label: "",
     href: "",
+  },
+  hero: {
+    // 6.7 「디자인 마감 — 히어로 모션」 실습 슬롯.
+    // 모션그래픽을 만들어 public/hero.mp4 로 저장한 뒤, 아래 video 를 "/hero.mp4" 로만 바꾸면
+    // 홈 배경이 영상으로 바뀝니다 (HeroMedia.tsx 컴포넌트는 손대지 않습니다).
+    // null 로 두면 poster 이미지로 완전히 동작합니다.
+    video: null,
+    poster: "/images/magma-hero-poster.png",
   },
 };
