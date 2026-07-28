@@ -4,7 +4,7 @@ description: "이동부터 저녁 식사까지. 30·40 남성이 휴양지에서
 date: 2026-07-27
 tags: ["여름휴양지", "남성코디", "리조트룩", "캡슐옷장"]
 thumbnail: "/images/summer-resort-top5/thumbnail.webp"
-draft: true
+draft: false
 ---
 
 <!-- 검수 상태: 윤문 완료. 외부 트렌드 표현은 출처 강도에 맞춰 조건부로 처리했으며, 실제 MAGMA 상품·가격·재고 정보는 포함하지 않았습니다. -->
